@@ -1,3 +1,5 @@
+'use strict';
+
 /* AUTHENTICATION */
 let passport = require('passport');
 let LocalStrategy = require('passport-local');
@@ -96,3 +98,11 @@ function isLoggedIn(req, res, next) {
     // if they aren't redirect them to the home page
     res.redirect('/login');
 }
+
+function Authentication () {
+    return {
+        
+    };
+}
+
+module.exports = Authentication();
